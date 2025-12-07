@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup_style.css">
+</head>
+<body>
+    <div id="bar">
+     <a href="">Margadarshi.com</a>
+    </div>
+    <h1>Margadarshi.Com</h1>
+    <br>
+     <div id="info">
+    <h2>Create an account</h2>
+    
+    
+    <form action="" method="post" onsubmit="signupMsg(); return false;">
+           <div>
+            <label >First Name* : </label>
+            <input type="text" placeholder="enter name" required>
+           </div>
+            <div>
+            <label>Last Name* : </label>
+            <input type="text" placeholder="enter last name" required>
+           </div>
+            <div>
+            <label>Mobile No. : </label>
+            <input type="number" placeholder="enter mo. no." maxlength="10">
+            </div>
+            <div>
+            <label>Create email id* : </label>
+            <input type="email" placeholder="enter email" required>
+            </div>
+            <div>
+            <label>Create a password*</label>
+            <input type="password" placeholder="enter password">
+            </div>
+            <button onclick="alert"(account created successfully)">Submit</button>
+             </div>
+    </form>
+    <script>
+function signupMsg() {
+    alert("Signup Successful! Welcome 😊");
+}
+</script>
+    
+</body>
+</html>
