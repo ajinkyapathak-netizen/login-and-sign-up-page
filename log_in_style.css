@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+    
+    
+}
+form{
+   border: 5px solid mediumslateblue;
+   border-radius: 15px;
+   margin: 40px;
+   background-color: aqua;
+}
+#bar{
+    text-align: left;
+    height: 60px;
+    background-color: blue;
+}
+h1{
+    color: rgb(34, 26, 189);
+    font-size: 40px;
+    margin: 50px;
+    text-shadow:black;
+}
+#login{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:emoji;
+    color:tomato;
+    
+    margin: 20px;
+}
+

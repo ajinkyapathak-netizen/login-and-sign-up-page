@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+#bar{
+    color: white;
+    height: 40px;
+    background-color: blue;   
+}
+#logo{
+    font-size: 30px;
+    color: coral;
+}
+a{
+     
+     margin-right: 210px;
+     color: white;
+}
+    
+#searchbar{
+    margin-top: 150px;
+    text-align: center;
+    
+}
+#name{
+    font-size: 50px;
+     padding-left: 100px;
+    color: darkviolet;
+    
+}
+button{
+    margin-top: 10px;
+    color: red;
+    background-color: rgb(28, 180, 56);
+    border:1px solid darkblue;
+    box-shadow: 10px;
+    font-size: large;
+}
