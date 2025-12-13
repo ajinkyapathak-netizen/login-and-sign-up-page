@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wizard structure</title>
+    <link rel="stylesheet" href="wizard_structure_style.css">
+</head>
+<body>
+    
+    <div class="wizard">
+        <input type="radio" name="step" id="step-1" checked>
+        <input type="radio" name="step" id="step-2">
+        <input type="radio" name="step" id="step-3">
+        <input type="radio" name="step" id="step-4">
+        <input type="radio" name="step" id="step-5">
+    
+
+    <div class="steps">
+        <label for="step-1" class="step">Personal</label>
+        <label for="step-2" class="step">Address</label>
+        <label for="step-3" class="step">Education</label>
+        <label for="step-4" class="step">Course</label>
+        <label for="step-5" class="step">Preview</label>
+    </div>
+
+    <div class="pages">
+        <div class="page-1">
+        <h2>Personal Information : </h2>
+        <input type="text" placeholder="First Name"> 
+        <input type="text" placeholder="Middle Name"> <br>
+        <input type="text" placeholder="Last Name">
+        <input type="tel" maxlength="10" placeholder="Mob. No." > <br>
+        <input type="email" placeholder="Email Id"> <br>
+         <label style="font: bold;">Date of Birth : </label>
+        <input type="date" placeholder="Date Of Birth"> <br>
+        <label>Gender : </label>    
+        <select name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select> <br>
+        <hr style="height: 3px; background-color: gray;">
+        <h2> Gaurdian Details : </h2>
+        <input type="text" placeholder="Gaurdian Full Name">
+        <input type="text" placeholder="Relation"><br>
+        <input type="tel" maxlength="10" placeholder="Gaurdian Mob. No.">
+        <input type="email" placeholder="Gaurdian Email Id">
+        <br>
+       <div class="pre-next1">
+         <button><label for="step-2" class="Next">Next</label></button>
+       </div>
+        </div>
+        <div class="page-2">
+            <h2>Address Details : </h2>
+            <label>Permananet Address</label><br>
+            <input type="text" placeholder="Type Address"><br>
+            <input type="text" placeholder="City">
+            <input type="number" maxlength="6" placeholder="Pin-Code">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Country">
+            <hr style="height: 3px; background-color: gray;">
+             <label>Temporary Address</label><br>
+            <input type="text" placeholder="Type Address"><br>
+            <input type="text" placeholder="City">
+            <input type="number" placeholder="Pin-Code">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Country">
+           <div class="pre-next">
+             <button><label for="step-1" class="Previous">Previous</label></button>
+            <button><label for="step-3" class="Next">Next</label></button> 
+           </div>
+        </div>
+        <div class="page-3">
+            <h2>Education Details : </h2><br>
+            <h3 style="text-decoration: underline;">*Graduation details</h3><br>
+            <label>Collage Name : </label>
+            <input type="text" placeholder="Collage Name"><br>
+            <label>City : </label>
+            <input type="text" placeholder="City Name"><br>
+            <label>University : </label>
+            <input type="text" placeholder="University Name"><br>
+            <label>Percentage : </label>
+            <input type="number" maxlength="5" placeholder="Percentage"><br>
+            <label>Passing Year</label>
+            <input type="number" maxlength="4" placeholder="Passing Year"><br>
+             <h3 style="text-decoration: underline;">*H.S.C. details</h3><br>
+            <label>Collage Name : </label>
+            <input type="text" placeholder="Collage Name"><br>
+            <label>City : </label>
+            <input type="text" placeholder="City Name"><br>
+            <label>University : </label>
+            <input type="text" placeholder="University Name"><br>
+            <label>Percentage : </label>
+            <input type="number" maxlength="5" placeholder="Percentage"><br>
+            <label>Passing Year</label>
+            <input type="number" maxlength="4" placeholder="Passing Year"><br>
+             <h3 style="text-decoration: underline;">*S.S.C. details</h3><br>
+            <label>Collage Name : </label>
+            <input type="text" placeholder="Collage Name"><br>
+            <label>City : </label>
+            <input type="text" placeholder="City Name"><br>
+            <label>University : </label>
+            <input type="text" placeholder="University Name"><br>
+            <label>Percentage : </label>
+            <input type="number" maxlength="5" placeholder="Percentage"><br>
+            <label>Passing Year</label>
+            <input type="number" maxlength="4" placeholder="Passing Year"><br>
+          <div class="pre-next">
+             <button><label for="step-2" class="Previous">Previous</label></button>
+            <button><label for="step-4" class="Next">Next</label></button>
+          </div>
+        </div>
+        <div class="page-4">
+            <h2>Course Details</h2>
+            <label>Course Name</label><br>
+            <select style="width: 20vh; height: 20px;"></select>
+            <br>
+            <label>Course Duration</label><br>
+            <select style="width: 20vh; height: 20px;">
+                <option hidden selected></option>
+                <option>Three Months</option>
+                <option>Six Months</option>
+                <option>Nine Months</option>
+            </select>
+             <div class="pre-next">
+                 <button><label for="step-3" class="Previous">Previous</label></button>
+             <button><label for="step-5" class="Next">Next</label></button>
+             </div>
+        </div>
+        <div class="page-5">
+            <h2>Preview your Details</h2><br>
+            <label>Personal Information</label><br>
+            <input type="text"><br>
+            <label>Gaurdian Details</label><br>
+            <input type="text"><br>
+            <label>Address Information</label><br>
+            <input type="text"><br>
+            <label>Education Background</label><br>
+            <input type="text"><br>
+            <label>Course Details</label><br>
+            <input type="text"><br>
+          <div class="pre-next">
+              <button> <label for="step-4" class="Previous">Previous</label></button>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+</body>
+</html>

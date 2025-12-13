@@ -1,0 +1,123 @@
+* {
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+   /* for hide radio button*/
+
+input[type="radio"] {
+    display: none;
+}
+
+ /* WIZARD CONTAINER */
+.wizard {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* STEP HEADER */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  padding: 10px 18px;
+  background: #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* active step */
+
+#step-1:checked ~ .steps label[for="step-1"],
+#step-2:checked ~ .steps label[for="step-2"],
+#step-3:checked ~ .steps label[for="step-3"],
+#step-4:checked ~ .steps label[for="step-4"],
+#step-5:checked ~ .steps label[for="step-5"] {
+     background: #4CAF50;
+  color: #fff;
+}
+
+/* pages */
+
+.pages>div{
+    display: none;
+     animation: fade 0.4s ease;
+}
+
+  /* show current page*/
+
+  #step-1:checked ~ .pages .page-1 {display: block;}
+  #step-2:checked ~ .pages .page-2 {display: block;}
+  #step-3:checked ~ .pages .page-3 {display: block;}
+  #step-4:checked ~ .pages .page-4 {display: block;}
+  #step-5:checked ~ .pages .page-5 {display: block;}
+
+  /* INPUTS & SELECT */
+input, select {
+  padding: 8px 10px;
+  margin: 8px 5px;
+  width: 220px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* FULL WIDTH INPUT */
+.page-2 input[type="text"] {
+  width: 100%;
+}
+
+/* LABELS */
+label {
+  font-weight: bold;
+}
+
+/* NAV BUTTONS */
+.next, .prev, button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+
+/* PREVIOUS BUTTON */
+.prev {
+  background: #777;
+}
+.pre-next {
+    display: flex;
+    justify-content: space-between;
+
+}
+.pre-next1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* BUTTON HOVER */
+.next:hover, .prev:hover, button:hover {
+  opacity: 0.9;
+}
+
+/* HR LINE */
+hr {
+  margin: 20px 0;
+}
+/* BUTTON HOVER */
+.next:hover, .prev:hover, button:hover {
+  opacity: 0.9;
+}
